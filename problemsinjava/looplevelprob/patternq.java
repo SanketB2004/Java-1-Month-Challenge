@@ -3,7 +3,7 @@ public class patternq {
 
     public static void main(String[] args) {
         
-secondpattern(6);
+secondpattern(100);
     }
 
     public static void secondpattern(int a){
