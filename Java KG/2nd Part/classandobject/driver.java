@@ -22,6 +22,17 @@ public static void main(String[] args) {
     // Adding fuel
     c1.addFuel(20.0f);
     System.out.println("Current Fuel after adding fuel: " + c1.getCurerrFuelLiter() + " liters");
+
+    c1.drive();
+    c1.drive();
+    c1.drive();
+    c1.drive();
+    c1.drive();
+    c1.drive();
+    c1.drive();
+    c1.drive();
+    c1.drive();
+    System.out.println("Current Fuel after driving multiple times: " + c1.getCurerrFuelLiter() + " liters");
 }
 }
 
