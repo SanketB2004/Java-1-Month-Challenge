@@ -1,42 +1,35 @@
-public class driver {
-    
-public static void main(String[] args) {
-    car c1 = new car();
-    c1.noOfWheels = 4;
-    c1.color = "Red";
-    c1.maxSpeed = 200.0f;
-    c1.curerrFuelLiter = 50.0f;
-    c1.noofSeats = 5;
+public class driver{
 
-    System.out.println("Car Details:");
-    System.out.println("Number of Wheels: " + c1.noOfWheels);
-    System.out.println("Color: " + c1.color);
-    System.out.println("Max Speed: " + c1.maxSpeed + " km/h");
-    System.out.println("Current Fuel: " + c1.getCurerrFuelLiter() + " liters");
-    System.out.println("Number of Seats: " + c1.noofSeats);
+    static int minAgeForDriving = 18;
 
-    // Driving the car
-    c1.drive();
-    System.out.println("Current Fuel after driving: " + c1.getCurerrFuelLiter() + " liters");
+    String name;
+    int age;
+    String dateOfLicense;
 
-    // Adding fuel
-    c1.addFuel(20.0f);
-    System.out.println("Current Fuel after adding fuel: " + c1.getCurerrFuelLiter() + " liters");
+    public boolean isAllowedToDrive() {
+        return this.age >= minAgeForDriving;
+    }
 
-    c1.drive();
-    c1.drive();
-    c1.drive();
-    c1.drive();
-    c1.drive();
-    c1.drive();
-    c1.drive();
-    c1.drive();
-    c1.drive();
-    System.out.println("Current Fuel after driving multiple times: " + c1.getCurerrFuelLiter() + " liters");
+
+    public static void main(String[] args) {
+//        Car myCar = new Car();
+//        myCar.addFuel(6);
+//        myCar.drive();
+//        myCar.drive();
+//        myCar.drive();
+//        myCar.addFuel(3);
+//        myCar.drive();
+//        System.out.println(myCar.getCurrentFuelLevel());
+
+        Car swift = new Car("Red");
+        Car thar = new Car();
+        thar = null;
+        //swift.addFuel(6);
+        swift.start().drive();
+        System.out.println(swift.color);
+
+//        Driver myDriver = new Driver();
+//        myDriver.dateOfLicense = "1/Jan/2024";
+//        System.out.println(minAgeForDriving);
+    }
 }
-}
-
-// object is used to car class instance
-// and we can access all the properties 
-// and methods of the car class using that 
-// object.
