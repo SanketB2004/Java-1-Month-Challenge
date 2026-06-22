@@ -76,4 +76,9 @@ public class Car {
                 ", noOfSeats=" + noOfSeats +
                 '}';
     }
+    @Override
+        protected void finalize() throws Throwable {
+        System.out.println("Car object is being garbage collected");
+         
+    }// this is a finalize method, which is called by the garbage collector when the object is being collected, and it prints a message to the console. It is used to perform any cleanup operations before the object is removed from memory.
 }
