@@ -5,7 +5,10 @@ class course {
 int enrollment;
     String courseName;
     String enrroledStudent;
-
+course(String courseName) {
+        this.courseName = courseName;
+        this.enrollment = 0;
+    }
     String[] enrolledStudents=new String[maxcapacity];
     
     static void setMaxCapacity(int capacity) {
