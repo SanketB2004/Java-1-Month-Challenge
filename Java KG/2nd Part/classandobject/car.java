@@ -23,12 +23,12 @@ public class Car {
         maxSpeed = 150;
         currentFuelInLiters = 2;
         noOfSeats = 5;
-    }
+    }//this is a parameterized constructor
 
     Car() {
         this("Black");
         currentFuelInLiters = 5;
-    }
+    }// this is a default constructor, which is calling the parameterized constructor using this() keyword
 
     public Car start() {
         int pop = 5;
