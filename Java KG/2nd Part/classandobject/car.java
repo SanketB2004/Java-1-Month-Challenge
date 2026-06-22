@@ -25,11 +25,21 @@ public class Car {
         noOfSeats = 5;
     }//this is a parameterized constructor
 
-    Car() {
+    
+
+    Car( int numberofSeats) {
         this("Black");
-        currentFuelInLiters = 5;
+        this.noOfSeats = numberofSeats;
+    }
+    Car() {
+        this(4);
+        
+        currentFuelInLiters = 5;// this is a default constructor, which is calling the parameterized constructor using this() keyword
+    
+    
     }// this is a default constructor, which is calling the parameterized constructor using this() keyword
 
+    
     public Car start() {
         int pop = 5;
         if (currentFuelInLiters == 0) {
