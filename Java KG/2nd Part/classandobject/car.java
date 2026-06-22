@@ -80,5 +80,13 @@ public class Car {
         protected void finalize() throws Throwable {
         System.out.println("Car object is being garbage collected");
          
-    }// this is a finalize method, which is called by the garbage collector when the object is being collected, and it prints a message to the console. It is used to perform any cleanup operations before the object is removed from memory.
+    }
+    
+    // not use because new versions of java is used a best code practices, and it is not recommended to use finalize method, because it is not guaranteed to be called, and it can cause performance issues if used improperly.
+    // not use finalize method because it is not guaranteed to be called, and it can cause performance issues if used improperly.
+    // this is a finalize method, which is called by the garbage collector when the object is being collected, and it prints a message to the console. It is used to perform any cleanup operations before the object is removed from memory.
+
+
+System.GC();// is a method that is used to request the garbage collector to run, and it is not guaranteed to be called, and it can cause performance issues if used improperly. It is not recommended to use System.GC() method, because it can cause performance issues if used improperly, and it is not guaranteed to be called.
+
 }
