@@ -4,7 +4,7 @@ public class Car {
     String color;
     float maxSpeed;
     float currentFuelInLiters;
-    int noOfSeats;
+    int noOfSeats; // this is all of a instance variable
 
     
     static {
@@ -60,7 +60,7 @@ public class Car {
 
     public void addFuel(float currentFuelInLiters) {
         this.currentFuelInLiters += currentFuelInLiters;
-    }
+    } // this is a all instance methods
 
     public float getCurrentFuelLevel() {
         return currentFuelInLiters;
